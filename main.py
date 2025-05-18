@@ -13,7 +13,7 @@ def generate_image(prompt, output_path="output/generated_image.png", guidance_sc
     pipe = StableDiffusionPipeline.from_pretrained(
         model_id,
         torch_dtype=dtype,
-        safety_checker=None  # Remove this line if you want NSFW filtering
+        
     )
     pipe = pipe.to(device)
 
